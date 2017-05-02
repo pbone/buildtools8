@@ -13,7 +13,7 @@ var sassPaths = [
 ];
 
 gulp.task('css', function() {
-    return gulp.src('./scss/style.scss')q
+    return gulp.src('./scss/style.scss')
         .pipe(sass({
             includePaths: [config.bootstrapDir + '/assets/stylesheets'],
             outputStyle: 'nested',
