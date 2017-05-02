@@ -1,0 +1,77 @@
+[00;32mblt > list:[0m
+
+__________.____  ___________
+\______   \    | \__    ___/
+ |    |  _/    |   |    |
+ |    |   \    |___|    |
+ |______  /_______ \____|
+        \/        \/
+
+Default target:
+-------------------------------------------------------------------------------
+ list
+
+Main targets:
+-------------------------------------------------------------------------------
+ acsf:init                             Initializes ACSF support for project.
+ acsf:init:drush                       Refreshes the acsf settings and hook files.
+ ci:pipelines:init                     Initializes default Acquia Pipelines configuration for this project.
+ ci:travis:init                        Initializes default Travis CI configuration for this project.
+ ci:tugboat:init                       Initializes default tugboat configuration for this project.
+ cleanup                               Removes deprecated BLT files and directories.
+ create-project:init-repo              Initializes the project repo directly after creation.
+ deploy                                Builds separate artifact and pushes to git.remotes defined project.yml.
+ deploy:build                          Generates a deploy-ready build in deploy.dir.
+ deploy:drupal:install                 Installs a specific Drupal site.
+ deploy:id                             Writes deployment id information to artifact.
+ deploy:tag                            Tag repository.
+ deploy:update                         Update current database to reflect the state of the Drupal file system; uses local drush alias.
+ deploy:update:site                    Update current database to reflect the state of the Drupal file system; uses local drush alias.
+ doctor                                Inspects your local blt configuration for possible issues.
+ drupal:install                        Installs a specific Drupal site.
+ fix                                   Runs all fix targets.
+ fix:phpcbf                            Runs PHP Code Beautifier utility against custom code.
+ frontend                              Runs all frontend targets
+ local:drupal:install                  Installs a specific Drupal site using local drush alias.
+ local:refresh                         Refreshes local environment from upstream testing database.
+ local:setup                           Install dependencies, builds docroot, installs Drupal; uses local drush alias.
+ local:sync                            Synchronize local environment from remote (remote --> local).
+ local:sync:db                         Synchronize local database from remote (remote --> local).
+ local:sync:db:all                     Iteratively synchronizes local database from remote for each multisite listed in multisite.name
+ local:sync:files                      Synchronize local files from remote (remote --> local).
+ local:update                          Update current database to reflect the state of the Drupal file system; uses local drush alias.
+ setup                                 Install dependencies, builds docroot, installs Drupal.
+ setup:behat                           Generates tests/behat/local.yml file for executing Behat tests locally.
+ setup:build                           Generates all required files for a full build. E.g., (re)builds docroot, etc.
+ setup:cloud-hooks                     Installs Acquia cloud hooks to hooks directory from version controlled scripts/cloud-hooks directory.
+ setup:composer:clean                  Wipes all composer managed directories and clears composer cache.
+ setup:composer:install                Installs project dependencies, including drupal core and contrib.
+ setup:config-import                   Import configuration from the config directory.
+ setup:drupal:install                  Installs a specific Drupal site.
+ setup:git-hooks                       Installs git hooks to local .git/hooks directory from version controlled scripts/git-hooks directory.
+ setup:hash-salt                       Generates and writes a hash salt to ${repo.root}/salt.txt if one does not exist.
+ setup:settings                        Creates settings files for Drupal and drush.
+ setup:toggle-modules                  Enables and uninstalls specified modules.
+ setup:update                          Update current database to reflect the state of the Drupal file system.
+ setup:update:features-import          Perform a features import on the specified bundle.
+ setup:update:features-override-check  Checks if features are overridden.
+ simplesamlphp:build:config            Copies config template files to the appropriate place in simplesamlphp library.
+ simplesamlphp:init                    Initializes SimpleSAMLphp for project.
+ validate                              Runs all code validation targets.
+ validate:composer                     Validate composer files.
+ validate:lint                         Runs a PHP Lint against all code.
+ validate:phpcs                        Runs PHP Code Sniffer against only custom modules.
+ validate:twig                         Validates twig syntax on custom twig files.
+ validate:yaml                         Runs a PHP Lint against all code.
+ version                               Display the currently installed version of BLT.
+
+Subtargets:
+-------------------------------------------------------------------------------
+ setup:config-import:config-split
+ setup:config-import:core-only
+ setup:config-import:features
+ setup:drupal:settings
+ setup:drush:settings
+
+[00;32m
+BUILD FINISHED; 5.3697 seconds[0m
